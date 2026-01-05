@@ -31,27 +31,46 @@
       </div>
     </header>
 
-    <!-- Hero -->
-    <section id="home" class="hero">
-      <div class="container hero__content">
-        <h1>Temukan buku yang menggerakkan pikiran</h1>
-        <p>Kurasi judul-judul terbaik untuk belajar, berkarya, dan bertumbuh  dari fiksi memikat hingga nonfiksi penuh wawasan.</p>
-        <div class="hero__actions">
-          <a href="#katalog" class="btn btn--primary">Lihat Katalog</a>
-          <a href="#terlaris" class="btn btn--ghost">Lihat Terlaris</a>
-        </div>
-        <div class="box">
-          <img src="images/metamorphosis.jpg" alt="" class="im">
-          <img src="images/the.jpg" alt="" class="im-m">
-          <img src="images/zara.jpg" alt="" class="im-m">
-          <img src="images/nlh.jpg" alt="" class="im-m">
-        </div>
-        <div class="arow">
-          <img src="images/left-arrow.png" alt="" id="prv">
-          <img src="images/right-arrow.png" alt="" id="next">
-        </div>
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="container hero_wrapper">
+
+    <!--  TEKS -->
+    <div class="hero_content">
+      <h1>Temukan buku yang menggerakkan pikiran</h1>
+      <p>
+        Kurasi judul-judul terbaik untuk belajar, berkarya, dan bertumbuh
+        dari fiksi memikat hingga nonfiksi penuh wawasan.
+      </p>
+
+      <div class="hero_actions">
+        <a href="#katalog" class="btn btn--primary">Lihat Katalog</a>
+        <a href="#terlaris" class="btn btn--ghost">Lihat Terlaris</a>
       </div>
-    </section>
+    </div>
+
+    <!--  SLIDER -->
+    <div class="hero_visual">
+
+      <button class="arrow" id="prv">
+        <img src="images/left-arrow.png" alt="">
+      </button>
+
+      <div class="box">
+        <img src="images/metamorphosis.jpg" class="im">
+        <img src="images/the.jpg" class="im-m">
+        <img src="images/zara.jpg" class="im">
+      </div>
+
+      <button class="arrow" id="next">
+        <img src="images/right-arrow.png" alt="">
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
 
     <!-- Pencarian -->
     <section class="search">
@@ -209,8 +228,8 @@ data-price="125000"
 data-popular="false">
   <div class="card__media">
     <picture>
-      <source srcset="images/Filosofi Teras.avif" type="image/avif">
-      <img src="images/Filosofi Teras.avif" alt="Filosofi Teras" loading="lazy">
+      <source srcset="images/filosofi teras.avif" type="image/avif">
+      <img src="images/filosofi teras.avif" alt="Filosofi Teras" loading="lazy">
     </picture>
   </div>
   <div class="card__body">
@@ -261,8 +280,8 @@ data-price="67000"
 data-popular="false">
   <div class="card__media">
     <picture>
-      <source srcset="images/Koala Kumal.avif" type="image/avif">
-      <img src="images/Koala Kumal.avif" alt="Koala Kumal" loading="lazy">
+      <source srcset="images/koala kumal.avif" type="image/avif">
+      <img src="images/koala kumal.avif" alt="Koala Kumal" loading="lazy">
     </picture>
   </div>
   <div class="card__body">
@@ -313,7 +332,7 @@ data-price="115000"
 data-popular="false">
   <div class="card__media">
     <picture>
-      <img src="images/Laut Bercerita.avif" alt="Laut Bercerita" loading="lazy">
+      <img src="images/laut bercerita.avif" alt="Laut Bercerita" loading="lazy">
     </picture>
   </div>
   <div class="card__body">
@@ -339,7 +358,7 @@ data-price="99000"
 data-popular="false">
   <div class="card__media">
     <picture>
-      <img src="images/Mariposa.avif" alt="Mariposa" loading="lazy">
+      <img src="images/mariposa.avif" alt="Mariposa" loading="lazy">
     </picture>
   </div>
   <div class="card__body">
@@ -417,7 +436,7 @@ data-price="99000"
 data-popular="false">
   <div class="card__media">
     <picture>
-      <img src="images/Rapijali.avif" alt="Rapijali" loading="lazy">
+      <img src="images/rapijali.avif" alt="Rapijali" loading="lazy">
     </picture>
   </div>
   <div class="card__body">
@@ -488,6 +507,32 @@ data-popular="false">
   </div>
 </article>
 
+<!-- 15 -->
+<article class="card card--book"
+data-genre="fiksi"
+data-price="88000"
+data-popular="false">
+  <div class="card__media">
+    <picture>
+      <img src="images/sketsa mendung.avif" alt="Sketsa Mendung" loading="lazy">
+    </picture>
+  </div>
+  <div class="card__body">
+    <h3>Sketsa Mendung</h3>
+    <p class="muted">Wira Nagara • Fiksi</p>
+    <p>Puisi tentang perasaan.</p>
+    <div class="card__meta">
+      <span class="price">Rp 88.000</span>
+      <button class="btn btn--ghost btn-detail"
+        data-title="Sketsa Mendung"
+        data-author="Wira Nagara"
+        data-desc="Kumpulan puisi yang menggambarkan kesedihan, kehilangan, dan keindahan perasaan manusia.">
+        Detail
+      </button>
+    </div>
+  </div>
+</article>
+
 <!-- 16 -->
 <article class="card card--book"
 data-genre="fiksi"
@@ -495,7 +540,7 @@ data-price="99000"
 data-popular="true">
   <div class="card__media">
     <picture>
-      <img src="images/Supernova.avif" alt="Supernova" loading="lazy">
+      <img src="images/supernova.avif" alt="Supernova" loading="lazy">
     </picture>
   </div>
   <div class="card__body">
@@ -750,6 +795,58 @@ data-popular="false">
         data-title="Dosa"
         data-author="Rafi Ikbar Sugara"
         data-desc="Refleksi mendalam tentang dosa, moralitas, dan konsekuensi pilihan manusia.">
+        Detail
+      </button>
+    </div>
+  </div>
+</article>
+
+<!-- 26 -->
+<article class="card card--book"
+data-genre="fiksi"
+data-price="145000"
+data-popular="true">
+  <div class="card__media">
+    <picture>
+      <img src="images/metamorphosis.jpg" alt="Metamorphosis" loading="lazy">
+    </picture>
+  </div>
+  <div class="card__body">
+    <h3>Metamorphosis</h3>
+    <p class="muted">Franz Kafka • Fiksi</p>
+    <p>Transformasi dan alienasi.</p>
+    <div class="card__meta">
+      <span class="price">Rp 145.000</span>
+      <button class="btn btn--ghost btn-detail"
+        data-title="Metamorphosis"
+        data-author="Franz Kafka"
+        data-desc="Gregor Samsa terbangun sebagai serangga raksasa—simbol keterasingan dan kehancuran identitas.">
+        Detail
+      </button>
+    </div>
+  </div>
+</article>
+
+<!-- 27 -->
+<article class="card card--book"
+data-genre="fiksi"
+data-price="155000"
+data-popular="true">
+  <div class="card__media">
+    <picture>
+      <img src="images/nlh.jpg" alt="No Longer Human" loading="lazy">
+    </picture>
+  </div>
+  <div class="card__body">
+    <h3>No Longer Human</h3>
+    <p class="muted">Osamu Dazai • Fiksi</p>
+    <p>Depresi dan kehilangan makna.</p>
+    <div class="card__meta">
+      <span class="price">Rp 155.000</span>
+      <button class="btn btn--ghost btn-detail"
+        data-title="No Longer Human"
+        data-author="Osamu Dazai"
+        data-desc="Pengakuan batin tentang keterasingan ekstrem dan kehancuran psikologis seorang manusia.">
         Detail
       </button>
     </div>
@@ -1046,4 +1143,3 @@ data-popular="false">
       </div>
     </footer>
   </body>
-
