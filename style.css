@@ -83,18 +83,13 @@
   
   /* ====== Hero ====== */
   .hero {
-    display: flex;
-    gap: 20px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
     background: radial-gradient(1000px 380px at 20% 0%, var(--primary-50), transparent),                linear-gradient(0deg, #fff, #fff);
     padding: 72px 0 48px;
-    transform: translate(-350px );
-    -webkit-transform: translate(-350px );
-    -moz-transform: translate(-350px );
-    -ms-transform: translate(-350px );
-    -o-transform: translate(-350px );
+    transform: translate(-160px );
+    -webkit-transform: translate(-160px );
+    -moz-transform: translate(-160px );
+    -ms-transform: translate(-160px );
+    -o-transform: translate(-160px );
 }
 
 .box{
@@ -427,4 +422,5 @@
     padding: 20px;
     border-radius: 8px;
   }
+
   
